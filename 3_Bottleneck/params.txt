@@ -1,0 +1,31 @@
+//inputfile for the program ABCestimator
+estimationType standard
+
+//file with the simulations. Consists of first the parameters and then the stats. A header line is required!
+// simName	
+
+//file with obnserved statistics. A Header is required with names corresponding to the stats in the simfile!
+obsName	../abc.out.observed.1.0.txt
+
+//columns containing parameters for which estimates will be produced
+params	1-4
+
+maxReadSims	1000000
+
+//number of simulations to estimate the GLM on
+numRetained	1000000
+
+//the width of the diracpeaks, affecting the smoothing..
+diracPeakWidth 0.005
+
+//number of points at which to estimate posterior density
+posteriorDensityPoints 100
+
+//should the statistics be standardized? values: 1 / 0 (default) 
+stadardizeStats 0
+
+//should the prior be written in a file? values: 0 (default) / 1
+writeRetained 1
+
+// obsPValue	1
+obsPValue	0
