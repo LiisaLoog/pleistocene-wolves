@@ -15,6 +15,6 @@ To calculate the posterior probabilities and Bayes factors using ABC from simula
 
 3. Run the bash script run_abc.sh. This will run ABCestimator on all the input files (including the params.txt file containing the parameter settings for the ABC estimator) and extract information for calculating posterior likelihoods. This information is stored in text files in each scenario directory with file names beginning with ABC_RESULTS.
 
-4. Update the table in the file ABC_Marginal_Densities.csv with the new marginal densities and line counts in the ABC_RESULTS files (this step is currently manual). Then use the R script ABC_BF_script.r to calculate posterior probabilities and Bayes factors of each scenario, which were reported in the main text of the manuscript and used to generate figure 1.
+4. Update the table in the file ABC_Marginal_Densities.csv with the new marginal densities and line counts in the ABC_RESULTS files (this step is currently manual). Then use the R script ABC_BF_script.r to calculate posterior probabilities and Bayes factors of each scenario, which were reported in the main text of the manuscript and used to generate figure 4.
 
 Finally, there is one R script for each scenario with file names starting with plot.ABC.output (e.g. plot.ABC.output.code.1.static.r). Use the scripts to generate plots of the posterior parameter distributions for all parameters  (as in supplementary figures 8 and 9).
